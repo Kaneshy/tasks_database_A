@@ -11,7 +11,7 @@ const loadTask = async () => {
   return res
 }
 
-export const revalidat = 1;
+export const dynamic = 'force-dynamic'
 
 const HomePage = async () => {
 
