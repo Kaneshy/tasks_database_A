@@ -2,10 +2,10 @@ import Link from "next/link"
 
 function NavBar() {
     return (
-        <nav className="bg-slate-900" >
+        <nav className=" text-white"  >
             <div className="container mx-auto flex justify-between items-center p-3 " >
                 <Link href={'/'} >
-                    <h3>TASKS.DB</h3>
+                    <h3>NOTE BOOK</h3>
                 </Link>
                 <ul className="flex gap-4 text-lg" >
                     <li>

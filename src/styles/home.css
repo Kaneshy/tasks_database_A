@@ -1,0 +1,55 @@
+.containerMain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.textareaMain {
+    background-color: #2E3138;
+    color: white;
+}
+
+.tarjetMain {
+    overflow-y: hidden;
+    padding: 20px;
+    height: 275px;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.dateMain {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+}
+
+.description {
+    height: 125px;
+    font-size: small;
+    background-color: #a99fa0;
+    overflow: hidden; 
+    padding: 5px;
+    text-overflow: ellipsis;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

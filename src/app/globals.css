@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --main-color: linear-gradient(180deg, #948790 0%, #2e3138 100%);
+}
+
 body {
-    @apply bg-gray-950 text-white
+    background: var(--main-color);
 }

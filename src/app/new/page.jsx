@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
+import '@/styles/home.css'
 
 
 function NewPage({ params }) {
@@ -52,27 +53,27 @@ function NewPage({ params }) {
   return (
     <div className="h-screen flex justify-center items-center " >
       <form
-        className="bg-slate-800 p-10"
+        className="bg-gray-400 p-10"
         onSubmit={handleSubmit}
       >
 
-        <label htmlFor="title" className="font-bold text-sm" >
+        <label htmlFor="title" className="font-bold text-sm text-gray-800" >
           Titulo
         </label>
         <input type="text"
-          className="border border-gray-400 p-2 mb-4 w-full text-black "
+          className="border border-gray-400 p-2 mb-4 w-full  textareaMain"
           placeholder="Title"
           id="title"
           onChange={(e) => settitle(e.target.value)}
           value={title}
         />
 
-        <label htmlFor="description" className="font-bold text-sm" >
-          description
+        <label htmlFor="description" className="font-bold text-sm text-gray-800" >
+          Description
         </label>
         <textarea name="" cols="30" rows="10"
           id="description"
-          className="border border-gray-400 p-2 mb-4 w-full text-black"
+          className="border border-gray-400 p-2 mb-4 w-full  textareaMain"
           placeholder="Descriptions"
           onChange={(e) => setdescription(e.target.value)}
           value={description}
@@ -80,11 +81,11 @@ function NewPage({ params }) {
         </textarea>
 
         <button
-          className="bg-blue-500 p-3 rounded"
+          className="bg-gray-100 p-3 rounded "
         >Send</button>
         {
           params.id && (
-            <button className="bg-red-400 p-3 rounded ml-4 "
+            <button className="bg-red-800 p-3 rounded ml-4 "
             type="button"
             onClick={async()=>{
               const res = await fetch(`/api/tasks/${params.id}`,{

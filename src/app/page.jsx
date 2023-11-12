@@ -1,5 +1,6 @@
 import { prisma } from "@/libs/prisma"
 import TaskCard from "@/components/TaskCard"
+import '@/styles/home.css'
 
 const loadTask = async () => {
   // const res = await fetch('http://localhost:3000/api/tasks')
@@ -20,7 +21,7 @@ const HomePage = async () => {
   return (
     <>
       <h1 className="flex text-3xl justify-center text-white my-5 " >All Tasks</h1>
-      <div className="grid grid-cols-3 gap-3 mt-10 p-5 ">
+      <div className="grid grid-cols-3 gap-3 mt-10 p-5 containerMain ">
         {tasks.map(task => {
           return (
             <TaskCard task={task} key={task.id} />
