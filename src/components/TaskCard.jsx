@@ -13,7 +13,7 @@ function TaskCard({task}) {
         }}
         >
             <h2 className="font-bold text-2xl mb-2 text-gray-600" >{task.title}</h2>
-            <div className="description" >{task.description}</div>
+            <p className="description" >{task.description}</p>
             <p className="text-m mb-5 text-gray-500 dateMain" >{new Date(task.createdAt).toLocaleDateString()}</p>
         </div>
     )

@@ -41,7 +41,7 @@ function AboutPage() {
         </li>
 
         <li>
-          <strong className='text-gray-300' >Secure and Private:</strong> Your thoughts are precious. That's why [Your App Name] takes your
+          <strong className='text-gray-300' >Secure and Private:</strong> Your thoughts are precious. That's why takes your
           privacy seriously. Enjoy the peace of mind that your notes are secure and for your eyes only.
         </li>
 
