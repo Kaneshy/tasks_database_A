@@ -7,7 +7,7 @@ function AboutPage() {
       <h1 className='text-white' >NOTE BOOK -  Personal Note-Taking Companion</h1>
 
       <p>Stay organized, inspired, and in control with NOTE BOOK, the ultimate note-taking app designed to
-        seamlessly integrate into your daily life. Whether you're a student, professional, or creative mind, this app
+        seamlessly integrate into your daily life. Whether you&apos;re a student, professional, or creative mind, this app
         empowers you to capture ideas, thoughts, and important information effortlessly.</p>
 
       <h2>Key Features:</h2>
@@ -20,7 +20,7 @@ function AboutPage() {
 
         <li>
           <strong className='text-gray-300' >Sync Across Devices:</strong> Access your notes anytime, anywhere. With seamless syncing across
-          devices, your important information is always at your fingertips, whether you're on your smartphone,
+          devices, your important information is always at your fingertips, whether you&apos;re on your smartphone,
           tablet, or computer.
         </li>
 
@@ -41,7 +41,7 @@ function AboutPage() {
         </li>
 
         <li>
-          <strong className='text-gray-300' >Secure and Private:</strong> Your thoughts are precious. That's why takes your
+          <strong className='text-gray-300' >Secure and Private:</strong> Your thoughts are precious. That&apos;s why takes your
           privacy seriously. Enjoy the peace of mind that your notes are secure and for your eyes only.
         </li>
 

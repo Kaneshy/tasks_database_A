@@ -11,13 +11,13 @@ function NewPage({ params }) {
   const [description, setdescription] = useState('')
 
   useEffect(() => {
-    if(params.id){
+    if (params.id) {
       fetch(`/api/tasks/${params.id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        settitle(data.title)
-        setdescription(data.description)
-      })
+        .then((res) => res.json())
+        .then((data) => {
+          settitle(data.title)
+          setdescription(data.description)
+        })
     }
   }, [])
 
@@ -86,15 +86,15 @@ function NewPage({ params }) {
         {
           params.id && (
             <button className="bg-red-800 p-3 rounded ml-4 "
-            type="button"
-            onClick={async()=>{
-              const res = await fetch(`/api/tasks/${params.id}`,{
-                method: 'DELETE'
-              })
-              const data = await res.json()
-              router.refresh()
-              router.push('/')
-            }}
+              type="button"
+              onClick={async () => {
+                const res = await fetch(`/api/tasks/${params.id}`, {
+                  method: 'DELETE'
+                })
+                const data = await res.json()
+                router.refresh()
+                router.push('/')
+              }}
             >
               Delete
             </button>
